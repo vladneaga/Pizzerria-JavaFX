@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Region prefHeight="44.0" prefWidth="600.0" />
+      <HBox prefHeight="68.0" prefWidth="485.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Id:">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin>
+            </Text>
+            <Label fx:id="orderLabel" text="Label">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="5.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price:">
+               <HBox.margin>
+                  <Insets left="80.0" top="7.0" />
+               </HBox.margin>
+            </Text>
+            <Label fx:id="priceLabel" text="Label">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="5.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel">
+               <HBox.margin>
+                  <Insets left="200.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="7.0" right="7.0" top="7.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="63.0" prefWidth="550.0">
+         <children>
+            <ChoiceBox fx:id="sizeChoiceBox" prefWidth="150.0" />
+            <Button fx:id="addPizzaButton" mnemonicParsing="false" text="Add Pizza">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="186.0" prefWidth="550.0">
+         <children>
+            <ListView fx:id="pizzaListView" prefHeight="107.0" prefWidth="320.0" />
+            <Button fx:id="orderButton" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Order">
+               <HBox.margin>
+                  <Insets left="100.0" top="100.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Region prefHeight="82.0" prefWidth="550.0" />
+   </children>
+   <padding>
+      <Insets left="50.0" />
+   </padding>
+</fx:root>
